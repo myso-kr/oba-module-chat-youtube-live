@@ -1,0 +1,41 @@
+{
+  "name": "oba-module-chat-youtube-live",
+  "version": "1.0.0",
+  "description": "",
+  "main": "dist/index.js",
+  "scripts": {
+    "test": "babel-node test/index.js",
+    "build": "babel src/index.js -o dist/index.js",
+    "prestart": "npm run build",
+    "prepublish": "npm run build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/myso-kr/oba-module-chat-youtube-live.git"
+  },
+  "author": "Choi Won",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/myso-kr/oba-module-chat-youtube-live/issues"
+  },
+  "homepage": "https://github.com/myso-kr/oba-module-chat-youtube-live#readme",
+  "devDependencies": {
+    "babel-cli": "^6.24.0",
+    "babel-core": "^6.24.0",
+    "babel-loader": "^6.4.0",
+    "babel-plugin-transform-runtime": "^6.23.0",
+    "babel-preset-es2015": "^6.24.0",
+    "babel-preset-react": "^6.23.0",
+    "babel-preset-stage-0": "^6.22.0"
+  },
+  "dependencies": {
+    "babel-polyfill": "^6.23.0",
+    "babel-runtime": "^6.23.0",
+    "bluebird": "^3.5.0",
+    "cheerio": "^0.22.0",
+    "debug": "^2.6.3",
+    "fetch-cookie": "^0.6.0",
+    "lodash": "^4.17.4",
+    "node-fetch": "^1.6.3"
+  }
+}
